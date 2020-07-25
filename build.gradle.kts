@@ -30,9 +30,6 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:4.1.0-beta04")
         classpath(kotlin("gradle-plugin", version = "1.3.72"))
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
         classpath("org.jlleitschuh.gradle:ktlint-gradle:9.3.0")
     }
 }
@@ -67,6 +64,21 @@ subprojects {
     detekt {
         config = files("${project.rootDir}/config/detekt/detekt.yml")
         parallel = true
+
+        reports {
+            xml {
+                enabled = true
+                destination = file("${project.rootDir}/build/reports/detekt_report.xml")
+            }
+            html {
+                enabled = true
+                destination = file("${project.rootDir}/build/reports/detekt_report.html")
+            }
+            txt {
+                enabled = true
+                destination = file("${project.rootDir}/build/reports/detekt_report.txt")
+            }
+        }
     }
 }
 
