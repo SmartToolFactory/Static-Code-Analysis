@@ -33,13 +33,12 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-
         classpath("org.jlleitschuh.gradle:ktlint-gradle:9.3.0")
     }
 }
 
 plugins {
-    id("org.jlleitschuh.gradle.ktlint").version("9.3.0")
+    id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
 }
 
 allprojects {
@@ -51,6 +50,15 @@ allprojects {
 
     // 🔥 Groovy
 //    apply plugin: "org.jlleitschuh.gradle.ktlint"
+}
+
+subprojects {
+    apply(plugin = "org.jlleitschuh.gradle.ktlint") // Version should be inherited from parent
+
+    // Optionally configure plugin
+    ktlint {
+        debug.set(true)
+    }
 }
 
 tasks.register("clean", Delete::class) {
