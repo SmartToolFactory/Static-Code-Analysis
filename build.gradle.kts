@@ -5,14 +5,14 @@ buildscript {
         google()
         jcenter()
 
-        // 🔥 Groovy
+        // 🔥 Groovy DSL
         //        maven {url "https://plugins.gradle.org/m2/"}
 
         // 🔥 Kotlin DSL
         maven { url = uri("https://plugins.gradle.org/m2/") }
     }
 
-    // 🔥 Groovy
+    // 🔥 Groovy DSL
 //    dependencies {
 //        classpath "com.android.tools.build:gradle:4.1.0-beta04"
 //        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -23,6 +23,8 @@ buildscript {
 //        classpath "org.jlleitschuh.gradle:ktlint-gradle:9.3.0"
 //
 //    }
+
+    val kotlinVersion = "1.3.72"
 
     // 🔥 Kotlin DSL
     dependencies {
