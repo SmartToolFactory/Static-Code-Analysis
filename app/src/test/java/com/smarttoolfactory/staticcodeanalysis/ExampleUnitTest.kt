@@ -1,4 +1,4 @@
-package com.smarttoolfactory.ktlintplayground
+package com.smarttoolfactory.staticcodeanalysis
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.smarttoolfactory.ktlintplayground
+package com.smarttoolfactory.staticcodeanalysis
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

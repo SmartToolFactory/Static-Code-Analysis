@@ -16,7 +16,7 @@ android {
 //    buildToolsVersion "30.0.0"
 //
 //    defaultConfig {
-//        applicationId "com.smarttoolfactory.ktlintplayground"
+//        applicationId "com.smarttoolfactory.staticcodeanalysis"
 //        minSdkVersion 21
 //        targetSdkVersion 29
 //        versionCode 1
@@ -43,7 +43,7 @@ android {
 
     compileSdkVersion(29)
     defaultConfig {
-        applicationId = "com.smarttoolfactory.ktlintplayground"
+        applicationId = "com.smarttoolfactory.staticcodeanalysis"
         minSdkVersion(21)
         targetSdkVersion(29)
         versionCode = 1
