@@ -64,7 +64,7 @@ object Deps {
         "com.squareup.retrofit2:converter-gson:${Version.RETROFIT_VERSION}"
     const val RETROFIT_RX_JAVA2_ADAPTER = "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
 
-    //change base url runtime
+    // Retrofit change base url runtime
     const val RETROFIT_URL_MANAGER = "me.jessyan:retrofit-url-manager:1.4.0"
 
     // Gson
@@ -97,14 +97,14 @@ object TestDeps {
     const val JUNIT5_ENGINE = "org.junit.jupiter:junit-jupiter-engine:${TestVersion.junit5Version}"
 
     // (Optional) If you need "Parameterized Tests"
-    const val JUNIT5_PARAM = "org.junit.jupiter:junit-jupiter-params:${TestVersion.junit5Version}"
+    const val JUNIT5_PARAMS = "org.junit.jupiter:junit-jupiter-params:${TestVersion.junit5Version}"
 
     const val ANDROIDX_CORE_TESTING =
         "androidx.arch.core:core-testing:${TestVersion.archTestingVersion}"
-    const val ROBOELECTRIC = "org.robolectric:robolectric:${TestVersion.robolectricVersion}"
+    const val ROBOLECTRIC = "org.robolectric:robolectric:${TestVersion.robolectricVersion}"
 
     // AndroidX Test - JVM testing
-    const val ANDRIODX_CORE_KTX = "androidx.test:core-ktx:${TestVersion.androidXTestCoreVersion}"
+    const val ANDROIDX_CORE_KTX = "androidx.test:core-ktx:${TestVersion.androidXTestCoreVersion}"
     const val ANDROIDX_JUNIT =
         "androidx.test.ext:junit:${TestVersion.androidXTestExtKotlinRunnerVersion}"
 
@@ -118,7 +118,7 @@ object TestDeps {
     const val TRUTH = "com.google.truth:truth:${TestVersion.truthVersion}"
 
     // Espresso
-    const val ESPRESSO = "androidx.test.espresso:espresso-core:${TestVersion.espressoVersion}"
+    const val ESPRESSO_CORE = "androidx.test.espresso:espresso-core:${TestVersion.espressoVersion}"
 
     // Testing Navigation
     const val NAVIGATION_TEST =

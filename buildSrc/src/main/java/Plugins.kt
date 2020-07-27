@@ -22,12 +22,4 @@ object Plugins {
     const val KOTLIN_ANDROID_PLUGIN = "kotlin-android"
     const val KOTLIN_ANDROID_EXTENSIONS_PLUGIN = "kotlin-android-extensions"
     const val KOTLIN_KAPT_PLUGIN = "kotlin-kapt"
-
-//    apply plugin: 'com.android.application'
-//    apply plugin: 'kotlin-android'
-//    apply plugin: 'kotlin-kapt'
-//    apply plugin: 'kotlin-android-extensions'
-//    apply plugin: 'dagger.hilt.android.plugin'
 }
-
-

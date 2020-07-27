@@ -1,15 +1,5 @@
 plugins {
-
-    // 🔥 Groovy DSL
-//    id 'com.android.application'
-//    id 'kotlin-android'
-
-    // 🔥 Kotlin DSL
-//    id("com.android.application")
-//    kotlin("android")
-
-    // 🔥 Kotlin DSL with BuildSrc
-    id(Plugins.ANDROID_APPLICATION_PLUGIN)
+    id(Plugins.ANDROID_LIBRARY_PLUGIN)
     id(Plugins.KOTLIN_ANDROID_PLUGIN)
     id(Plugins.KOTLIN_ANDROID_EXTENSIONS_PLUGIN)
     id(Plugins.KOTLIN_KAPT_PLUGIN)
@@ -18,39 +8,8 @@ plugins {
 
 android {
 
-    // 🔥 Groovy DSL
-//    compileSdkVersion 29
-//    buildToolsVersion "30.0.0"
-//
-//    defaultConfig {
-//        applicationId "com.smarttoolfactory.staticcodeanalysis"
-//        minSdkVersion 21
-//        targetSdkVersion 29
-//        versionCode 1
-//        versionName "1.0"
-//
-//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-//    }
-//
-//    buildTypes {
-//        release {
-//            minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-//        }
-//    }
-//    compileOptions {
-//        sourceCompatibility JavaVersion.VERSION_1_8
-//        targetCompatibility JavaVersion.VERSION_1_8
-//    }
-//    kotlinOptions {
-//        jvmTarget = '1.8'
-//    }
-
-    // 🔥 Kotlin DSL
-
     compileSdkVersion(AndroidVersion.COMPILE_SDK_VERSION)
     defaultConfig {
-        applicationId = "com.smarttoolfactory.staticcodeanalysis"
         minSdkVersion(AndroidVersion.MIN_SDK_VERSION)
         targetSdkVersion(AndroidVersion.TARGET_SDK_VERSION)
         versionCode = AndroidVersion.VERSION_CODE
@@ -72,7 +31,6 @@ android {
 dependencies {
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(project(Modules.CORE))
 
     implementation(Deps.KOTLIN)
     implementation(Deps.ANDROIDX_CORE_KTX)
