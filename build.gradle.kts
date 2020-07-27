@@ -24,19 +24,29 @@ buildscript {
 //
 //    }
 
-    val kotlinVersion = "1.3.72"
+    // 🔥 Kotlin DSL
+//    dependencies {
+//        classpath("com.android.tools.build:gradle:4.1.0-beta04")
+//        classpath(kotlin("gradle-plugin", version = "1.3.72"))
+//        classpath("org.jlleitschuh.gradle:ktlint-gradle:9.3.0")
+//    }
 
     // 🔥 Kotlin DSL
     dependencies {
-        classpath("com.android.tools.build:gradle:4.1.0-beta04")
-        classpath(kotlin("gradle-plugin", version = "1.3.72"))
-        classpath("org.jlleitschuh.gradle:ktlint-gradle:9.3.0")
+        classpath(Plugins.CLASSPATH_GRADLE)
+        classpath(kotlin("gradle-plugin", version = PluginVersion.KOTLIN_VERSION))
+        classpath(Plugins.CLASSPATH_KTLINT)
     }
 }
 
+// plugins {
+//    id("org.jlleitschuh.gradle.ktlint") version GradlePluginVersion.KTLINT_VERSION
+//    id("io.gitlab.arturbosch.detekt") version GradlePluginVersion.DETEKT_VERSION
+// }
+
 plugins {
-    id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
-    id("io.gitlab.arturbosch.detekt") version "1.10.0"
+    id(Plugins.KTLINT) version PluginVersion.KTLINT_VERSION
+    id(Plugins.DETEKT) version PluginVersion.DETEKT_VERSION
 }
 
 allprojects {
@@ -51,7 +61,7 @@ allprojects {
 subprojects {
 
     // KtLint
-    apply(plugin = "org.jlleitschuh.gradle.ktlint") // Version should be inherited from parent
+    apply(plugin = Plugins.KTLINT) // Version should be inherited from parent
 
     // Optionally configure plugin
     ktlint {
@@ -59,7 +69,7 @@ subprojects {
     }
 
     // Detekt
-    apply(plugin = "io.gitlab.arturbosch.detekt")
+    apply(plugin = Plugins.DETEKT)
 
     detekt {
         config = files("${project.rootDir}/config/detekt/detekt.yml")
