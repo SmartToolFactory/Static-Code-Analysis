@@ -3,6 +3,7 @@
     <words>
       <w>deps</w>
       <w>detekt</w>
+      <w>kapt</w>
       <w>ktlint</w>
     </words>
   </dictionary>
