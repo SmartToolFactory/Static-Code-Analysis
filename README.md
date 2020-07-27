@@ -1,10 +1,10 @@
-# Gradle Kotlin DSL ktLint detekt Git Hooks Sample
+# Gradle Kotlin DSL, ktLint, detekt, Git Hooks Sample
 
 [![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 [![Kotlin Version](https://img.shields.io/badge/kotlin-1.3.72-blue.svg)](https://kotlinlang.org)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 
-Sample boiler plate code to implement Kotlin DSL, ktlint, detekt and Git Hooks to app on app, library and dynamic feature module step by step with each commit. Also added git hooks using script below in ```.git\hooks``à folder with a excutable **pre-commit.sh** to turn simple text to excutable call ```chmod a+x pre-commit```
+Sample boiler plate code to implement Kotlin DSL, ktlint, detekt and Git Hooks to app on app, library and dynamic feature module step by step with each commit. Also added git hooks using script below in ```.git\hooks``` folder with a excutable **pre-commit.sh** to turn simple text to excutable call ```chmod a+x pre-commit```
 
 ```
 #!/bin/sh
@@ -105,7 +105,10 @@ plugins {
 ```
 to turn it a dsl folder
 
-Created ```DependencyHandler```extension functions to not repeat adding same dependencies to different modules over again, for instance
+Created [DependencyHandler](buildSrc/src/main/java/extension/DependencyHandlerExtension.kt) extension functions to not repeat adding same dependencies to different modules over and over again
+
+For instance
+
 ```
 fun DependencyHandler.addCoreModuleDependencies() {
 
