@@ -1,4 +1,5 @@
 include(
     ":app",
-    ":core"
+    ":core",
+    ":features:feature_dashboard"
 )

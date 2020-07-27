@@ -6,6 +6,8 @@ object Plugins {
     const val GRADLE = "com.android.tools.build:gradle"
     const val DETEKT = "io.gitlab.arturbosch.detekt"
     const val KTLINT = "org.jlleitschuh.gradle.ktlint"
+    const val GIT_HOOKS = "plugins.git-hooks"
+
     const val CLASSPATH_GRADLE = "com.android.tools.build:gradle:${PluginVersion.GRADLE_VERSION}"
     const val CLASSPATH_KTLINT =
         "org.jlleitschuh.gradle:ktlint-gradle:${PluginVersion.KTLINT_VERSION}"

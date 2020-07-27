@@ -1,4 +1,4 @@
-package com.smarttoolfactory.core
+package com.smarttoolfactory.feature_dashboard
 
 import junit.framework.Assert.assertEquals
 import org.junit.Test

@@ -1,9 +1,9 @@
-import extension.addCoreModuleDependencies
+import extension.addDynamicFeatureModuleDependencies
 import extension.addInstrumentationTestDependencies
 import extension.addUnitTestDependencies
 
 plugins {
-    id(Plugins.ANDROID_LIBRARY_PLUGIN)
+    id(Plugins.ANDROID_DYNAMIC_FEATURE_PLUGIN)
     id(Plugins.KOTLIN_ANDROID_PLUGIN)
     id(Plugins.KOTLIN_ANDROID_EXTENSIONS_PLUGIN)
     id(Plugins.KOTLIN_KAPT_PLUGIN)
@@ -34,9 +34,7 @@ android {
 
 dependencies {
 
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-
-    addCoreModuleDependencies()
+    addDynamicFeatureModuleDependencies()
 
     addUnitTestDependencies()
 

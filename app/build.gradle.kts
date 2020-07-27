@@ -67,6 +67,7 @@ android {
             )
         }
     }
+    dynamicFeatures = mutableSetOf(Modules.DynamicFM.DASHBOARD)
 }
 
 dependencies {

@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
 
+    val kotlin_version by extra("1.3.72")
     repositories {
         google()
         jcenter()
@@ -31,7 +32,7 @@ buildscript {
 //        classpath("org.jlleitschuh.gradle:ktlint-gradle:9.3.0")
 //    }
 
-    // 🔥 Kotlin DSL
+    // 🔥 Kotlin DSL + BuildSrc
     dependencies {
         classpath(Plugins.CLASSPATH_GRADLE)
         classpath(kotlin("gradle-plugin", version = PluginVersion.KOTLIN_VERSION))

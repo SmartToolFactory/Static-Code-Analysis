@@ -2,7 +2,10 @@ object Modules {
     const val APP = ":app"
     const val CORE = ":core"
 
-    object Features {
-
+    /**
+     * Dynamic Feature Modules
+     */
+    object DynamicFM {
+        const val DASHBOARD = ":features:feature_dashboard"
     }
 }
