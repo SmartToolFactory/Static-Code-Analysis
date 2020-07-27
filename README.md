@@ -4,7 +4,7 @@
 [![Kotlin Version](https://img.shields.io/badge/kotlin-1.3.72-blue.svg)](https://kotlinlang.org)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 
-Sample boiler plate code to implement Kotlin DSL, ktlint, detekt and Git Hooks to app on app, library and dynamic feature module step by step with each commit. Also added git hooks using script below in .git > hooks folder with a excutable **pre-commit.sh** to turn simple text to excutable call ```chmod a+x pre-commit```
+Sample boiler plate code to implement Kotlin DSL, ktlint, detekt and Git Hooks to app on app, library and dynamic feature module step by step with each commit. Also added git hooks using script below in ```.git\hooks``à folder with a excutable **pre-commit.sh** to turn simple text to excutable call ```chmod a+x pre-commit```
 
 ```
 #!/bin/sh
