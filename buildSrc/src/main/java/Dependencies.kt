@@ -1,6 +1,8 @@
 object Deps {
 
-    const val CORE_KTX = "androidx.core:core-ktx:${Version.CORE_KTX_VERSION}"
+    const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib:${PluginVersion.KOTLIN_VERSION}"
+
+    const val ANDROIDX_CORE_KTX = "androidx.core:core-ktx:${Version.CORE_KTX_VERSION}"
 
     // AppCompat
     const val APPCOMPAT = "androidx.appcompat:appcompat:${Version.APPCOMPAT_VERSION}"
@@ -10,7 +12,10 @@ object Deps {
 
     // ConstraintLayout
     const val CONSTRAINT_LAYOUT =
-        "androidx.constraintlayout:constraintlayout:${Version.MATERIAL_VERSION}"
+        "androidx.constraintlayout:constraintlayout:${Version.CONSTRAINT_LAYOUT_VERSION}"
+
+    // RecyclerView
+    const val RECYCLER_VIEW = "androidx.recyclerview:recyclerview:${Version.RECYCLER_VIEW_VERSION}"
 
     // ViewPager2
     const val VIEWPAGER2 = "androidx.viewpager2:viewpager2:${Version.VIEWPAGER2_VERSION}"
@@ -37,6 +42,9 @@ object Deps {
         "com.google.dagger:dagger-android-processor:${Version.DAGGER_VERSION}"
 
     // Dagger Hilt
+    const val DAGGER_HILT_ANDROID = "com.google.dagger:hilt-android:${Version.DAGGER_HILT_VERSION}"
+    const val DAGGER_HILT_COMPILER =
+        "com.google.dagger:hilt-android-compiler:${Version.DAGGER_HILT_VERSION}"
 
     // RxJava
     const val RX_JAVA = "io.reactivex.rxjava2:rxjava:${Version.RXJAVA_VERSION}"
@@ -47,13 +55,14 @@ object Deps {
     // Coroutines
     const val COROUTINES_CORE =
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.COROUTINES_VERSION}"
-    const val COROUTUNES_ANDRIOD =
+    const val COROUTINES_ANDROID =
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Version.COROUTINES_VERSION}"
 
     // Retrofit
     const val RETROFIT = "com.squareup.retrofit2:retrofit:${Version.RETROFIT_VERSION}"
-    const val GSON_CONVERTER = "com.squareup.retrofit2:converter-gson:${Version.RETROFIT_VERSION}"
-    const val RX_JAVA2_ADAPTER = "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
+    const val RETROFIT_GSON_CONVERTER =
+        "com.squareup.retrofit2:converter-gson:${Version.RETROFIT_VERSION}"
+    const val RETROFIT_RX_JAVA2_ADAPTER = "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
 
     //change base url runtime
     const val RETROFIT_URL_MANAGER = "me.jessyan:retrofit-url-manager:1.4.0"
@@ -62,7 +71,7 @@ object Deps {
     const val GSON = "com.google.code.gson:gson:${Version.GSON_VERSION}"
 
     // Room
-    const val ROOM = "androidx.room:room-runtime:${Version.ROOM_VERSION}"
+    const val ROOM_RUNTIME = "androidx.room:room-runtime:${Version.ROOM_VERSION}"
 
     // For Kotlin use kapt instead of annotationProcessor
     const val ROOM_COMPILER = "androidx.room:room-compiler:${Version.ROOM_VERSION}"
@@ -83,7 +92,7 @@ object Deps {
 
 object TestDeps {
 
-//     (Required) Writing and executing Unit Tests on the JUnit Platform
+    // (Required) Writing and executing Unit Tests on the JUnit Platform
     const val JUNIT5_API = "org.junit.jupiter:junit-jupiter-api:${TestVersion.junit5Version}"
     const val JUNIT5_ENGINE = "org.junit.jupiter:junit-jupiter-engine:${TestVersion.junit5Version}"
 
@@ -99,10 +108,20 @@ object TestDeps {
     const val ANDROIDX_JUNIT =
         "androidx.test.ext:junit:${TestVersion.androidXTestExtKotlinRunnerVersion}"
 
+    const val ANDROIDX_ESPRESSO =
+        "androidx.test.espresso:espresso-core${TestVersion.espressoVersion}"
+
     // MockK
     const val MOCK_K = "io.mockk:mockk:${TestVersion.mockKVersion}"
 
     // Truth
     const val TRUTH = "com.google.truth:truth:${TestVersion.truthVersion}"
+
+    // Espresso
+    const val ESPRESSO = "androidx.test.espresso:espresso-core:${TestVersion.espressoVersion}"
+
+    // Testing Navigation
+    const val NAVIGATION_TEST =
+        "androidx.navigation:navigation-testing:${Version.NAVIGATION_VERSION}"
 }
 

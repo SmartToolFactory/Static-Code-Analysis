@@ -35,6 +35,7 @@ buildscript {
     dependencies {
         classpath(Plugins.CLASSPATH_GRADLE)
         classpath(kotlin("gradle-plugin", version = PluginVersion.KOTLIN_VERSION))
+        classpath(Plugins.CLASSPATH_DAGGER_HILT)
         classpath(Plugins.CLASSPATH_KTLINT)
     }
 }

@@ -2,7 +2,7 @@ object PluginVersion {
     const val KOTLIN_VERSION = "1.3.72"
     const val GRADLE_VERSION = "4.1.0-beta04"
 
-    const val NAVIGATION = "2.3.0-alpha06"
+    const val NAVIGATION_SAFE_ARGS = "2.3.0-alpha06"
     const val KTLINT_VERSION = "9.3.0"
     const val DETEKT_VERSION = "1.10.0"
 }
@@ -62,7 +62,7 @@ object Version {
 
     // Dagger
     const val DAGGER_VERSION = "2.28"
-    const val DAGGER_HILT_VERSION = ""
+    const val DAGGER_HILT_VERSION = "2.28.1-alpha"
 
     // RxJava
     const val RXJAVA_VERSION = "2.2.19"
@@ -91,7 +91,7 @@ object TestVersion {
     const val junit5Version = "5.4.0"
 
     // Espresso
-    const val espressoVersion = "3.2.0-beta01"
+    const val espressoVersion = "3.2.0"
 
     // RoboElectric
     const val robolectricVersion = "4.3.1"
