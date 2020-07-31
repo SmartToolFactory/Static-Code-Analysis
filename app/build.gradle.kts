@@ -67,6 +67,29 @@ android {
             )
         }
     }
+
+    //    signingConfigs {
+//        create(BuildType.RELEASE) {
+//            keyAlias = getLocalProperty("signing.key.alias")
+//            keyPassword = getLocalProperty("signing.key.password")
+//            storeFile = file(getLocalProperty("signing.store.file"))
+//            storePassword = getLocalProperty("signing.store.password")
+//        }
+//    }
+
+    flavorDimensions("debug")
+    productFlavors {
+
+    }
+
+    sourceSets {
+
+    }
+
+    dataBinding {
+        isEnabled = true
+    }
+
     dynamicFeatures = mutableSetOf(Modules.DynamicFM.DASHBOARD)
 }
 
